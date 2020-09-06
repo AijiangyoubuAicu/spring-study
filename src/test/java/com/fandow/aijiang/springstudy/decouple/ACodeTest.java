@@ -23,6 +23,15 @@ public class ACodeTest {
 	private CProgrammer cProgrammer;
 	
 	/**
+	 * 控制反转的测试
+	 */
+	@Test
+	public void codingCDTest() {
+		dProgrammer.code();
+		cProgrammer.code();
+	}
+	
+	/**
 	 * 强耦合类与类的测试
 	 */
 	@Test
@@ -47,13 +56,6 @@ public class ACodeTest {
 		bitLeader.task();
 	}
 	
-	/**
-	 * 控制反转的测试
-	 */
-	@Test
-	public void codingCDTest() {
-		dProgrammer.code();
-		cProgrammer.code();
-	}
+	
 	
 }

@@ -312,12 +312,20 @@ IOC 由 **BeanFactory** 和 **ApplicationContext**
 
 ### Spring Boot
 
-假设我们使用一个 Spring 开发一个简单的 Hello World 应用程序，我们需要
-- 一个项目结构，其中有一个包含必要依赖的 Maven 或 Gradle 构建文件，最起码要有 Spring 等依赖
-- 一个 web.xml 配置文件
-- 
+官网的定义：
+```text
+Spring Boot 的设计是可以尽可能地启动和运行，只需要最少的 Spring 配置。Spring Boot 对构建生产应用程序具有独特的方式。
+```
+
+这种**独特的方式**表现在：
+- 起步依赖
+- 约定大于配置
+- 自动配置
+
 
 #### 起步依赖
+
+
 #### 自动配置
 #### 约定大于配置
 #### @SpringApplication
@@ -349,15 +357,6 @@ IOC 由 **BeanFactory** 和 **ApplicationContext**
 #### 常见的微服务解决方案
 - 4Netfix
 - Alibaba
-
-
-### Spring WebFulx
-#### 响应式流编程
-#### 前置知识
-- NIO
-- Netty
-- JDK9-Reactive
-#### 响应式持久化数据
 
 
 ## Spring 开发实践

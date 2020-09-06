@@ -1,7 +1,7 @@
 package com.fandow.aijiang.springstudy.decouple.compoent;
 
 import com.fandow.aijiang.springstudy.decouple.Computer;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 /**
  * 戴尔的电脑实现
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  * @author 爱酱油不爱醋
  * @version 1.0
  */
-@Service
+@Component
 public class DaierComputer implements Computer {
 	
 	@Override

@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/inventory_fandow_com?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    username: root
+    password: root
+  redis:
+    host: localhost
+    port: 6379
+    jedis:
+      pool:
+        # 最大连接实例数
+        max-active: 1024
+        # 最大闲置实例数
+        max-idle: 200
+        # 等待可用连接的最大时间
+        max-wait: 15000
