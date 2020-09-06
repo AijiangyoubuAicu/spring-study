@@ -1,0 +1,7 @@
+### 前置通知测试
+GET http://{{host}}/aop/before
+Accept: application/json
+
+### 后置通知测试
+GET http://{{host}}/aop/after
+Accept: application/json

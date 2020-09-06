@@ -274,6 +274,14 @@ IOC 由 **BeanFactory** 和 **ApplicationContext**
 - BeanFactory: 实现了容器的最基本功能
 - ApplicationContext: 应用上下文，作为容器的高级形态存在
 
+#### 标识 Spring Bean
+标识 Spring bean 的注解
+- @Component: 一个类型级的注解，能够标识一个 Spring Bean
+- @Service: 标识服务级别的 Spring Bean
+- @Controller: 标识控制器的 Spring Bean
+- @Repository: 标识 DAO 层的 Spring Bean
+- 
+
 
 ### AOP
 
@@ -284,7 +292,7 @@ IOC 由 **BeanFactory** 和 **ApplicationContext**
 - 权限功能
 - ...
 
-这些系统级别的服务在 AOP 思想当中被称为**横切关注点**
+这些系统级别的服务在 AOP 思想当中被称为**横切关注点**，横切关注点被模块化和封装的类被称为**切面**
 
 ```text
 一个简单的类比，就比如保安或后勤岗位
@@ -293,12 +301,22 @@ IOC 由 **BeanFactory** 和 **ApplicationContext**
 那么我们想在每一层都安置保安和后勤部门，但保安与后勤部门与我们每一层楼的功能职责其实并不相关，我们可以说保安和后勤部门是横切关注点。
 ```
 
-#### 前置、后置、环绕通知
-
+#### 通知 advice
+- 前置通知 Before : 在目标前被调用之前调用切面方法
+- 后置通知 After : 在目标方法完成之后调用切面方法，此通知不关心被目标方法的输出结果什么
+- 返回通知 After-retuning : 在目标方法成功执行之后调用切面方法
+- 异常通知 After-retuning : 在目标方法成功执行之后调用通知
+- 环绕通知 Around : 通知包裹了的目标方法，在被通知方法调用之前和调用之后执行切面方法
 
 ## Spring 全家桶概述
 
 ### Spring Boot
+
+假设我们使用一个 Spring 开发一个简单的 Hello World 应用程序，我们需要
+- 一个项目结构，其中有一个包含必要依赖的 Maven 或 Gradle 构建文件，最起码要有 Spring 等依赖
+- 一个 web.xml 配置文件
+- 
+
 #### 起步依赖
 #### 自动配置
 #### 约定大于配置
