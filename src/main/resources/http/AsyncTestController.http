@@ -1,0 +1,11 @@
+### 传统 Runnable 方法异步测试
+GET http://{{host}}/async/runnable
+Accept: application/json
+
+### Spring 异步注解 @Async 方法测试
+GET http://{{host}}/async/async
+Accept: application/json
+
+### Spring 异步注解 @Async 方法有返回值测试
+GET http://{{host}}/async/future
+Accept: application/json
