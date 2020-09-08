@@ -1,6 +1,6 @@
 package com.fandow.aijiang.springstudy.async.concurrent;
 
-import com.fandow.aijiang.springstudy.async.SchedulingAndAsync;
+import com.fandow.aijiang.springstudy.async.pool.GlobalThreadPool;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
@@ -23,7 +23,7 @@ public class AsyncService {
 	 * 注入全局线程池并使用
 	 */
 	@Resource
-	private SchedulingAndAsync schedulingAndAsync;
+	private GlobalThreadPool globalThreadPool;
 	
 	/**
 	 * 使用 @Async 将方法执行异步化
@@ -69,7 +69,7 @@ public class AsyncService {
 			}
 			log.info("---------异步方法 runnable() 已执行---------");
 		};
-		schedulingAndAsync.asyncExecutor().execute(runnable);
+		globalThreadPool.asyncExecutor().execute(runnable);
 	}
 	
 }

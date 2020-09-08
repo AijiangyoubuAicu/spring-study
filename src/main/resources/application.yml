@@ -17,3 +17,9 @@ spring:
         max-idle: 200
         # 等待可用连接的最大时间
         max-wait: 15000
+
+aijiang:
+  gender: 男
+  department: 后端A中心
+  phone: 1834548411
+  name: 姓名

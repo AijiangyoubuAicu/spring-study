@@ -2,18 +2,18 @@ package com.fandow.aijiang.springstudy.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * 全局业务异常处理
  *
  * @author 梁业锦
- * @since 2020-08-15
+ * @version 1.0
  */
 @Slf4j
 @Component
-@ControllerAdvice
+@RestControllerAdvice
 public class GlobalExceptionHandler {
 	
 	/**

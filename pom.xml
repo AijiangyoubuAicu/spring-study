@@ -91,6 +91,13 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.18.Final</version>
+            <scope>compile</scope>
+        </dependency>
+
         <!-- mybatis -->
         <!--<dependency>
             <groupId>org.mybatis</groupId>
@@ -111,14 +118,5 @@
         </dependency>-->
 
     </dependencies>
-
-    <!--<build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>-->
 
 </project>

@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "aijiang.name",
+      "type": "java.lang.String",
+      "defaultValue": "请输入姓名！",
+      "description": "姓名."
+    },
+    {
+      "name": "aijiang.gender",
+      "type": "java.lang.String",
+      "description": "性别."
+    },
+    {
+      "name": "aijiang.department",
+      "type": "java.lang.String",
+      "description": "部门."
+    },
+    {
+      "name": "aijiang.phone",
+      "type": "java.lang.String",
+      "description": "手机号."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 package com.fandow.aijiang.springstudy.exception.controller;
 
-import com.fandow.aijiang.springstudy.async.SchedulingAndAsync;
+import com.fandow.aijiang.springstudy.async.pool.SubThreadPool;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("exception")
 public class ExceptionController {
 	
-	private SchedulingAndAsync schedulingAndAsync;
+	private SubThreadPool schedulingAndAsync;
 	
 	@GetMapping("test")
 	public void exceptionHandler() {
